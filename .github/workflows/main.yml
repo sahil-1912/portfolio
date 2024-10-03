@@ -25,10 +25,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name "sahil"
-          git config --global user.email "sahil00thakur1997@gmail.com"
-          git remote set-url origin https://${GITHUB_ACTOR}:${ACTIONS_DEPLOY_ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+          publish_dir: ./build 
