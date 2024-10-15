@@ -7,17 +7,18 @@ const meta = {
 const introdata = {
     title: "I’m Sahil Thakur",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop web apps",
+        first: "I build modern and responsive websites",
+        second: "Crafting seamless user experiences",
+        third: "Turning ideas into functional web apps",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "A passionate web developer with expertise in creating dynamic websites and applications. I love turning challenges into solutions with clean and efficient code. Let's build something great together!",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
+
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "A Bit About Myself",
+    aboutme: "I am a full-stack developer with 3 years of experience working on both the front-end and back-end. I specialize in the MERN stack and Next.js, building modern and responsive web applications. What drives me is the endless scope of coding and how it challenges my creativity and problem-solving skills. I've worked on diverse projects, including payment systems, trading platforms, data analytics, and graphic design tools. Outside of coding, I enjoy playing pool, cricket, chess, and video games. My strength lies in solving complex problems and creating strong, scalable logic for applications."
 };
 const worktimeline = [{
         jobtitle: "Designer of week",
@@ -42,7 +43,7 @@ const skills = [{
     },
     {
         name: "NextJs",
-        value: 85,
+        value: 75,
     },
     {
         name: "Javascript",
@@ -50,7 +51,7 @@ const skills = [{
     },
     {
         name: "React",
-        value: 60,
+        value: 90,
     },
     {
         name: "AWS Services",
@@ -58,19 +59,21 @@ const skills = [{
     },
 ];
 
-const services = [{
+const services = [
+    {
         title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "Crafting intuitive and engaging user interfaces with a focus on enhancing user experience. I design layouts that are not only visually appealing but also highly functional, ensuring a smooth and enjoyable experience for users.",
     },
     {
         title: "Web Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "Building dynamic, responsive, and scalable web applications using the latest technologies like the MERN stack and Next.js. Whether it's a simple website or a complex web app, I ensure high performance and seamless functionality.",
     },
     {
-        title: "Server Management",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Server & DevOps Management",
+        description: "Providing reliable back-end solutions and managing deployment pipelines across platforms like AWS, Vercel, Heroku, GitHub, Azure, and GoDaddy. My expertise in server management and DevOps ensures your applications are secure, scalable, and optimized for high availability.",
     },
 ];
+
 
 const dataportfolio = [{
         img: "https://picsum.photos/400/?grayscale",
@@ -134,20 +137,18 @@ const dataportfolio = [{
         link: "#",
     },
 ];
-
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_EMAIL: "sahil00thakur1997@gmail.com",
+    YOUR_NAME: "Sahil Thakur",
+    YOUR_FONE: "(+91)7018442313",
+    description: "Feel free to get in touch with me! I'm based in Mohali, Punjab, India, and I'm always excited to collaborate on interesting projects, whether it's building web apps, designing user interfaces, or managing server infrastructure. Let's connect and make something amazing together!",
+    YOUR_SERVICE_ID: process.env.REACT_APP_YOUR_SERVICE_ID, // Replace with your actual service ID from EmailJS
+    YOUR_TEMPLATE_ID: process.env.REACT_APP_YOUR_TEMPLATE_ID, // Replace with your actual template ID from EmailJS
+    YOUR_USER_ID: process.env.REACT_APP_YOUR_USER_ID, // Replace with your actual user ID from EmailJS
 };
 
 const socialprofils = {
-    github: "https://github.com",
+    github: "https://github.com/sahil-1912",
     facebook: "https://facebook.com",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",

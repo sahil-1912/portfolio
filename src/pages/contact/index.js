@@ -19,28 +19,29 @@ export const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormdata({ loading: true });
-
+    setFormdata({ ...formData, loading: true });
+  
     const templateParams = {
-      from_name: formData.email,
-      user_name: formData.name,
-      to_name: contactConfig.YOUR_EMAIL,
-      message: formData.message,
+      from_name: formData.name,  // This should map to the name input
+      user_email: formData.email, // This should map to the email input
+      message: formData.message,  // This should map to the message input
+      to_name: contactConfig.YOUR_NAME, // This will map to your EmailJS recipient
     };
-
+  
     emailjs
       .send(
-        contactConfig.YOUR_SERVICE_ID,
-        contactConfig.YOUR_TEMPLATE_ID,
-        templateParams,
-        contactConfig.YOUR_USER_ID
+        "contact_service",  // Your EmailJS service ID
+        "contact_form",      // Your EmailJS template ID
+        templateParams,      // The parameters for the email
+        contactConfig.YOUR_USER_ID // Your EmailJS user ID
       )
       .then(
         (result) => {
           console.log(result.text);
           setFormdata({
+            ...formData,
             loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
+            alertmessage: "SUCCESS! Thank you for your message.",
             variant: "success",
             show: true,
           });
@@ -48,7 +49,9 @@ export const ContactUs = () => {
         (error) => {
           console.log(error.text);
           setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
+            ...formData,
+            loading: false,
+            alertmessage: `Failed to send!, ${error.text}`,
             variant: "danger",
             show: true,
           });
@@ -56,6 +59,7 @@ export const ContactUs = () => {
         }
       );
   };
+  
 
   const handleChange = (e) => {
     setFormdata({
