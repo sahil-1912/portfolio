@@ -1,4 +1,4 @@
-const logotext = "Sahil";
+const logotext = "Sahil Thakur";
 const meta = {
     title: "Sahil Thakur",
     description: "I’m Sahil Tahkur, Full stack devloper,currently working in India",
@@ -43,11 +43,11 @@ const skills = [{
     },
     {
         name: "NextJs",
-        value: 75,
+        value: 85,
     },
     {
         name: "Javascript",
-        value: 80,
+        value: 98,
     },
     {
         name: "React",
@@ -76,64 +76,70 @@ const services = [
 
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "assets/cake-prints/cake-platform.png",
+        description: "Design with delight, create with confidence.",
         link: "#",
     },
 
     {
-        img: "https://picsum.photos/400/600/?grayscale",
+        img: "assets/cake-prints/cake-template.png",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
+        img: "assets/cake-prints/cake-design.png",
+        description: "Transform your vision, one design at a time.",
+        link: "#",
+    },
+    {
+        img: "assets/cake-prints/cake-preview.png",
+        description: "Your imagination, perfectly frosted.",
+        link: "#",
+    },
+    {
+        img: "assets/data-analytics/analytics-start.png",
+        description: "Your data journey starts here, your insights lead everywhere.",
+        link: "#",
+    },
+
+    {
+        img: "assets/data-analytics/analytic-features.png",
+        description: "From clicks to clarity: Your site's story unveiled.",
+        link: "#",
+    },
+    {
+        img: "assets/data-analytics/analytic-feature2.png",
+        description: "Where your digital footprints become your roadmap.",
+        link: "#",
+    },
+    {
+        img: "assets/data-analytics/analytics-integrated.png",
+        description: "One platform, endless possibilities.",
+        link: "#",
+    },
+    {
+        img: "assets/llm/llm-login.png",
+        description: "Enterprise AI, simplified and scaled.",
+        link: "#",
+    },
+    {
+        img: "assets/llm/llm-chatsection.png",
+        description: "Where business meets breakthrough AI.",
+        link: "#",
+    },
+    {
+        img: "assets/llm/llm-settings.png",
+        description: "One key, all AI: Enterprise solutions unleashed.",
+        link: "#",
+    },
+    {
+        img: "assets/llm/llm-login.png",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "assets/llm/llm-usermgt.png",
+        description: "Your AI kingdom, your rules.",
         link: "#",
     },
 ];
